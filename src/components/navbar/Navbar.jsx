@@ -1,5 +1,6 @@
 import "./navbar.scss";
 import { useState } from "react";
+import CloseIconSVG from "./closeIcon";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -20,8 +21,8 @@ const Navbar = () => {
 				<a href="/" className="register">
 					Sign up
 				</a>
-				<div className="menuIcon">
-					<img src="/menu.png" alt="" onClick={() => setOpen(!open)} />
+				<div className="menuIcon" onClick={() => setOpen(!open)}>
+					{open ? <CloseIconSVG /> : <img src="/menu.png" alt="Menu" />}
 				</div>
 				<div className={open ? "menu active" : "menu"}>
 					<a href="/">Home</a>
