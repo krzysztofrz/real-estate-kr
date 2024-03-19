@@ -24,7 +24,6 @@
 		max-width: 640px;
 	}
 	.content {
-		background-color: white;
-		flex: 1;
+		height: calc(100vh - 100px);
 	}
 }
