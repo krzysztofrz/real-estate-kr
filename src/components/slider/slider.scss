@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .slider {
 	width: 100%;
 	display: flex;
@@ -14,7 +16,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		z-index: 999;
+		z-index: 9999;
 
 		.arrow {
 			flex: 1;
@@ -23,6 +25,13 @@
 			align-items: center;
 			img {
 				width: 50px;
+
+				@include md {
+					width: 30px;
+				}
+				@include sm {
+					width: 20px;
+				}
 
 				&.right {
 					transform: rotate(180deg);
@@ -34,11 +43,22 @@
 			height: 100%;
 			background-color: black;
 			flex: 10;
+			border-radius: 10px;
 			img {
 				width: 100%;
-				height: auto;
+				height: 90%;
 				//???
 				object-fit: cover;
+
+				@include md {
+					height: 80%;
+				}
+				@include sm {
+					height: 70%;
+				}
+			}
+			@include md {
+				display: flex;
 			}
 		}
 		.close {
