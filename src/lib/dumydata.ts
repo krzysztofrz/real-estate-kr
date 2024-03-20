@@ -111,11 +111,11 @@ export const singlePostData = {
 	bus: "100m away",
 	restaurant: "50m away",
 	description:
-		"Future alike hill pull picture swim magic chain seed engineer nest outer raise bound easy poetry gain loud weigh me recognize farmer bare danger. actually put square leg vessels earth engine matter key cup indeed body film century shut place environment were stage vertical roof bottom lady function breeze darkness beside tin view local breathe carbon swam declared magnet escape has from pile apart route coffee storm someone hold space use ahead sheep jungle closely natural attached part top grain your grade trade corn salmon trouble new bend most teacher range anybody every seat fifteen eventually",
+		"Warsaw, the vibrant capital of Poland, is a fascinating blend of historical charm and modern energy, offering a diverse range of residential options. From the serene, green expanses of Żoliborz, known for its harmonious community and beautiful parks, to the bustling, cosmopolitan district of Śródmieście, where the heart of the city beats with its blend of historical sites, modern architecture, and lively cafes, there's a place for every lifestyle. Mokotów beckons with its spacious apartments and proximity to nature, ideal for families seeking a balance between city life and tranquility. Praga, on the city's east side, has transformed into a hub of artistic expression and urban cool, retaining its historical grit while embracing new galleries, eateries, and renovated apartments. ",
 };
 
 export const userData = {
 	id: 1,
-	name: "John Doe",
+	name: "Jonathan Kowalski",
 	img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 };

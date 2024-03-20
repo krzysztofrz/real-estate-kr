@@ -7,8 +7,7 @@ const Map = ({ items }) => {
 	return (
 		<MapContainer
 			center={[52.2493, 21.01406]}
-			zoom={12}
-			// zoom={13}
+			zoom={13}
 			scrollWheelZoom={true}
 			className="map"
 		>
