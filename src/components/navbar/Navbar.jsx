@@ -1,9 +1,11 @@
 import "./navbar.scss";
 import { useState } from "react";
 import CloseIconSVG from "./closeIcon";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+	const location = useLocation();
+	console.log(location);
 	const [open, setOpen] = useState(false);
 	const user = true;
 	return (
@@ -13,24 +15,26 @@ const Navbar = () => {
 					<img src="/logo.png" alt="" />
 					<span>Housing Agency</span>
 				</a>
-				<a href="/">Home</a>
-				<a href="/">About</a>
-				<a href="/">Contact</a>
-				<a href="/">Agents</a>
+				<a href="/list">Properties</a>
+				<a href="/profile">Agents</a>
+				<a href="/1">About</a>
+				<a href="/contact">Contact</a>
 			</div>
 			<div className="right">
 				{user ? (
-					<div className="user">
-						<img
-							src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-							alt=""
-						/>
-						<span>Tomasz Nowakowski</span>
-						<Link to="/profile" className="profile">
-							<div className="notification">3</div>
-							<span>Profile</span>
-						</Link>
-					</div>
+					location.pathname !== "/contact" ? (
+						<div className="user">
+							<img
+								src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt=""
+							/>
+							<span>Tomasz Nowakowski</span>
+							<Link to="/profile" className="profile">
+								<div className="notification">3</div>
+								<span>Profile</span>
+							</Link>
+						</div>
+					) : null
 				) : (
 					<>
 						{" "}
