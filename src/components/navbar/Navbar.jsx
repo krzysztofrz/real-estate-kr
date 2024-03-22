@@ -34,7 +34,11 @@ const Navbar = () => {
 								<span>Profile</span>
 							</Link>
 						</div>
-					) : null
+					) : (
+						<div className="contactImg">
+							<img src="/contact2.png" alt="" />
+						</div>
+					)
 				) : (
 					<>
 						{" "}

@@ -56,6 +56,7 @@ nav {
 
 		@include md {
 			background-color: transparent;
+			background-color: white;
 		}
 
 		a {
@@ -151,6 +152,24 @@ nav {
 		}
 		.closeIcon {
 			margin-right: 8px;
+		}
+	}
+
+	.contactImg {
+		width: 110%;
+		// height: 160vh;
+		img {
+			width: 120%;
+			height: 100%;
+			position: relative;
+			top: 650px;
+			object-fit: cover;
+			background-position: top center;
+			overflow: hidden;
+
+			@include md {
+				display: none;
+			}
 		}
 	}
 }
