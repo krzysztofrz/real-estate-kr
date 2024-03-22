@@ -35,9 +35,7 @@ const Navbar = () => {
 							</Link>
 						</div>
 					) : (
-						<div className="contactImg">
-							<img src="/contact2.png" alt="" />
-						</div>
+						<div className="rightContact"></div>
 					)
 				) : (
 					<>
@@ -53,9 +51,10 @@ const Navbar = () => {
 				</div>
 				<div className={open ? "menu active" : "menu"}>
 					<a href="/">Home</a>
-					<a href="/">About</a>
-					<a href="/">Contact</a>
-					<a href="/">Agents</a>
+					<a href="/list">Properties</a>
+					<a href="/profile">Agents</a>
+					<a href="/1">About</a>
+					<a href="/contact">Contact</a>
 					<a href="/">Sign in</a>
 					<a href="/">Sign up</a>
 				</div>

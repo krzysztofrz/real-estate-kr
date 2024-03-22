@@ -155,21 +155,9 @@ nav {
 		}
 	}
 
-	.contactImg {
-		width: 110%;
-		// height: 160vh;
-		img {
-			width: 120%;
-			height: 100%;
-			position: relative;
-			top: 650px;
-			object-fit: cover;
-			background-position: top center;
-			overflow: hidden;
-
-			@include md {
-				display: none;
-			}
-		}
+	.rightContact {
+		height: 100%;
+		width: 100%;
+		background-color: white;
 	}
 }
